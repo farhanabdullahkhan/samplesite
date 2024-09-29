@@ -33,7 +33,7 @@
         }
 
         /* special offer code till end */
-        .special-offer {
+        /*.special-offer {
             background-color: #ffc107;
             color: #000;
             padding: 10px;
@@ -69,7 +69,35 @@
             height: 100%;
             background-color: rgba(0,0,0,0.5);
             z-index: 999;
-        }
+        } */
+
+        /* new try */
+        .special-offer {
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.offer-text {
+    display: inline-block;
+    animation: blink-and-slide 10s linear infinite;
+}
+
+@keyframes blink-and-slide {
+    0%, 100% { opacity: 1; transform: translateX(100%); }
+    5%, 95% { opacity: 1; transform: translateX(-100%); }
+    50% { opacity: 0.5; }
+}
+
+@media (max-width: 768px) {
+    .special-offer {
+        font-size: 14px;
+    }
+}
     </style>
 </head>
 <body>
